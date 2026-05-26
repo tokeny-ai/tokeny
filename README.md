@@ -9,6 +9,7 @@
 </p>
 
 <p align="center">
+  <a href="https://tokeny-ai.com">官网</a> ·
   <a href="#下载">下载</a> ·
   <a href="#界面预览">界面预览</a> ·
   <a href="#核心能力">核心能力</a> ·
@@ -24,7 +25,7 @@ Tokeny 是一个本地优先的桌面 AI 助手。它把多模型对话、Agent 
 
 ## 下载
 
-前往 [GitHub Releases](../../releases) 下载最新版安装包。
+访问官网 [tokeny-ai.com](https://tokeny-ai.com)，或前往 [GitHub Releases](../../releases) 下载最新版安装包。
 
 | 平台 | 安装包 | 说明 |
 | --- | --- | --- |
@@ -43,33 +44,49 @@ Tokeny 的主界面围绕工作空间组织。Agent 可以读取工作区文件�
 
 ![Tokeny Agent workspace](screenshots/agent.png)
 
-### Skills 与 MCP 扩展
+### Skills 技能
 
-Skills 为 Agent 注入领域能力，适合深度研究、数据分析、文档生成、PPT 制作等专业场景。MCP 插件用于连接外部工具和服务，例如联网搜索、浏览器自动化、地图服务、笔记系统和 3D 建模工具。
+Skills 为 Agent 注入领域能力，适合深度研究、数据分析、文档生成、PPT 制作等专业场景。
 
-| Skills 技能 | MCP 插件 |
-| --- | --- |
-| ![Tokeny Skills](screenshots/skills.png) | ![Tokeny MCP plugins](screenshots/mcp.png) |
+![Tokeny Skills](screenshots/skills.png)
+
+### MCP 插件
+
+MCP 插件用于连接外部工具和服务，例如联网搜索、浏览器自动化、地图服务、笔记系统和 3D 建模工具。
+
+![Tokeny MCP plugins](screenshots/mcp.png)
 
 ### 模型、记忆与自动化
 
 你可以为对话、子任务、记忆、知识库、图片生成、语音识别等用途分别选择模型。Tokeny 支持持久记忆和定时任务，适合日报推送、日志巡检、资料整理、周期性研究等自动化流程。
 
-| 模型配置 | 记忆管理 |
-| --- | --- |
-| ![Tokeny model settings](screenshots/models.png) | ![Tokeny memory management](screenshots/memory.png) |
+#### 模型配置
 
-| 定时任务 | 执行结果 |
-| --- | --- |
-| ![Tokeny scheduled tasks](screenshots/schedule.png) | ![Tokeny generated result](screenshots/job.png) |
+![Tokeny model settings](screenshots/models.png)
+
+#### 记忆管理
+
+![Tokeny memory management](screenshots/memory.png)
+
+#### 定时任务
+
+![Tokeny scheduled tasks](screenshots/schedule.png)
+
+#### 执行结果
+
+![Tokeny generated result](screenshots/job.png)
 
 ### IM 集成与数据管理
 
-Tokeny 支持将飞书、微信等消息入口接入桌面 AI 助手，让 Agent 在 IM 中自动处理消息。数据管理页提供存储概览、日志管理和跨设备迁移能力，便于备份和换机。
+Tokeny 支持将飞书、微信等消息入口接入桌面 AI 助手，让 Agent 在 IM 中自动处理消息。
 
-| IM 集成 | 数据管理 |
-| --- | --- |
-| ![Tokeny IM integration](screenshots/im.png) | ![Tokeny data management](screenshots/settings.png) |
+![Tokeny IM integration](screenshots/im.png)
+
+### 数据管理
+
+数据管理页提供存储概览、日志管理和跨设备迁移能力，便于备份和换机。
+
+![Tokeny data management](screenshots/settings.png)
 
 ## 核心能力
 
@@ -95,7 +112,6 @@ Tokeny 支持将飞书、微信等消息入口接入桌面 AI 助手，让 Agent
 
 - Windows 10 及以上，x64
 - macOS 12 Monterey 及以上，arm64 或 x64
-- Linux 主流桌面发行版，x64，支持 AppImage
 - 建议内存 8 GB 及以上
 - 建议预留 500 MB 以上磁盘空间
 
@@ -112,10 +128,6 @@ Windows 默认位于 `%APPDATA%/Tokeny`，macOS 默认位于 `~/Library/Applicat
 ### 必须配置 API Key 吗？
 
 需要。Tokeny 本身不内置模型服务，你需要配置至少一个 AI 服务商的 API Key 或兼容 OpenAI API 的 Base URL。
-
-### MCP 和 Skills 有什么区别？
-
-MCP 负责连接外部工具和服务，Skills 负责给 Agent 注入领域方法、工作流和提示模板。实际使用中二者可以配合，例如用 Skill 定义研究流程，用 MCP 提供联网搜索或浏览器操作能力。
 
 ### 这是开源仓库吗？
 
