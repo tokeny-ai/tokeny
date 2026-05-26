@@ -10,6 +10,7 @@
 
 <p align="center">
   <a href="https://tokeny-ai.com">官网</a> ·
+  <a href="https://space.bilibili.com/385462682">B站主页</a> ·
   <a href="#下载">下载</a> ·
   <a href="#界面预览">界面预览</a> ·
   <a href="#核心能力">核心能力</a> ·
@@ -25,7 +26,7 @@ Tokeny 是一个本地优先的桌面 AI 助手。它把多模型对话、Agent 
 
 ## 下载
 
-访问官网 [tokeny-ai.com](https://tokeny-ai.com)，或前往 [GitHub Releases](../../releases) 下载最新版安装包。
+访问官网 [tokeny-ai.com](https://tokeny-ai.com)，关注 [B站主页](https://space.bilibili.com/385462682)，或前往 [GitHub Releases](../../releases) 下载最新版安装包。
 
 | 平台 | 安装包 | 说明 |
 | --- | --- | --- |
