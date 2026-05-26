@@ -1,0 +1,16 @@
+# Binaries
+*.exe
+*.blockmap
+*.dmg
+*.AppImage
+*.snap
+*.deb
+*.rpm
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
