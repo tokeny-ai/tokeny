@@ -11,11 +11,17 @@
 <p align="center">
   <a href="https://tokeny-ai.com">官网</a> ·
   <a href="https://space.bilibili.com/385462682">B站主页</a> ·
-  <a href="#下载">下载</a> ·
+  <a href="https://github.com/tokeny-ai/tokeny/releases">下载</a> ·
   <a href="#界面预览">界面预览</a> ·
   <a href="#核心能力">核心能力</a> ·
   <a href="#系统要求">系统要求</a> ·
   <a href="#常见问题">常见问题</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/tokeny-ai/tokeny/releases/tag/v1.8.1"><img src="https://img.shields.io/github/v/release/tokeny-ai/tokeny?display_name=tag&label=最新版本" alt="Latest release"></a>
+  <a href="https://github.com/tokeny-ai/tokeny/releases"><img src="https://img.shields.io/github/downloads/tokeny-ai/tokeny/total?label=累计下载" alt="Downloads"></a>
+  <a href="https://github.com/tokeny-ai/tokeny/releases/tag/v1.8.1"><img src="https://img.shields.io/badge/Windows-x64-0078D4" alt="Windows x64"></a>
 </p>
 
 ---
@@ -24,70 +30,57 @@ Tokeny 是一个本地优先的桌面 AI 助手。它把多模型对话、Agent 
 
 数据默认保存在本机，模型请求只发送到你配置的 AI 服务商。你可以按工作空间管理文件、会话、权限、记忆和自动化流程。
 
+## 最新版本
+
+当前发布版本为 **v1.8.1**。本次 Release 已验证 Windows x64 安装包，并提供 SHA-256 校验文件。
+
 ## 下载
 
-访问官网 [tokeny-ai.com](https://tokeny-ai.com)，关注 [B站主页](https://space.bilibili.com/385462682)，或前往 [GitHub Releases](../../releases) 下载最新版安装包。
-
-| 平台 | 安装包 | 说明 |
+| 平台 | 当前下载 | 说明 |
 | --- | --- | --- |
-| Windows x64 | `Tokeny-<version>-windows-x64.exe` | NSIS 安装包，支持自定义安装目录 |
-| macOS Apple Silicon | `Tokeny-<version>-mac-arm64.dmg` | 适用于 Apple Silicon 芯片 |
-| macOS Intel | `Tokeny-<version>-mac-x64.dmg` | 适用于 Intel 芯片 |
-| Linux x64 | `Tokeny-<version>-linux-x64.AppImage` | AppImage 格式，无需安装 |
+| Windows x64 | [Tokeny-1.8.1-windows-x64.exe](https://github.com/tokeny-ai/tokeny/releases/download/v1.8.1/Tokeny-1.8.1-windows-x64.exe) | NSIS 安装包，支持自定义安装目录 |
+| 其他平台 | [查看全部 Releases](https://github.com/tokeny-ai/tokeny/releases) | 以对应 Release 页面提供的资产为准 |
+
+Windows 安装包的 SHA-256：
+
+```text
+219D29F86EF2D0EC638D8D979745886D7B897D9AED0A0F3932AA2E58D1C8AF74
+```
+
+也可以下载 [Tokeny-1.8.1-windows-x64.exe.sha256](https://github.com/tokeny-ai/tokeny/releases/download/v1.8.1/Tokeny-1.8.1-windows-x64.exe.sha256) 后，在 PowerShell 中校验：
+
+```powershell
+Get-FileHash .\Tokeny-1.8.1-windows-x64.exe -Algorithm SHA256
+```
 
 安装后至少配置一个模型渠道即可开始使用。
 
 ## 界面预览
 
-### Agent 工作空间
-
 Tokeny 的主界面围绕工作空间组织。Agent 可以读取工作区文件、执行工具、生成内容，并在同一界面里沉淀会话和任务结果。
 
-![Tokeny Agent workspace](screenshots/agent.png)
-
-### Skills 技能
-
-Skills 为 Agent 注入领域能力，适合深度研究、数据分析、文档生成、PPT 制作等专业场景。
-
-![Tokeny Skills](screenshots/skills.png)
-
-### MCP 插件
-
-MCP 插件用于连接外部工具和服务，例如联网搜索、浏览器自动化、地图服务、笔记系统和 3D 建模工具。
-
-![Tokeny MCP plugins](screenshots/mcp.png)
-
-### 模型、记忆与自动化
-
-你可以为对话、子任务、记忆、知识库、图片生成、语音识别等用途分别选择模型。Tokeny 支持持久记忆和定时任务，适合日报推送、日志巡检、资料整理、周期性研究等自动化流程。
-
-#### 模型配置
-
-![Tokeny model settings](screenshots/models.png)
-
-#### 记忆管理
-
-![Tokeny memory management](screenshots/memory.png)
-
-#### 定时任务
-
-![Tokeny scheduled tasks](screenshots/schedule.png)
-
-#### 执行结果
-
-![Tokeny generated result](screenshots/job.png)
-
-### IM 集成与数据管理
-
-Tokeny 支持将飞书、微信等消息入口接入桌面 AI 助手，让 Agent 在 IM 中自动处理消息。
-
-![Tokeny IM integration](screenshots/im.png)
-
-### 数据管理
-
-数据管理页提供存储概览、日志管理和跨设备迁移能力，便于备份和换机。
-
-![Tokeny data management](screenshots/settings.png)
+<table>
+  <tr>
+    <td align="center"><img src="screenshots/agent.png" alt="Agent 工作空间" width="420"><br><sub>Agent 工作空间</sub></td>
+    <td align="center"><img src="screenshots/skills.png" alt="Skills 技能" width="420"><br><sub>Skills 技能</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/mcp.png" alt="MCP 插件" width="420"><br><sub>MCP 插件</sub></td>
+    <td align="center"><img src="screenshots/plugin.png" alt="插件市场" width="420"><br><sub>插件市场</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/models.png" alt="模型配置" width="420"><br><sub>模型配置</sub></td>
+    <td align="center"><img src="screenshots/memory.png" alt="记忆管理" width="420"><br><sub>记忆管理</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/schedule.png" alt="定时任务" width="420"><br><sub>定时任务</sub></td>
+    <td align="center"><img src="screenshots/job.png" alt="执行结果" width="420"><br><sub>执行结果</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/im.png" alt="IM 集成" width="420"><br><sub>IM 集成</sub></td>
+    <td align="center"><img src="screenshots/settings.png" alt="数据管理" width="420"><br><sub>数据管理</sub></td>
+  </tr>
+</table>
 
 ## 核心能力
 
@@ -103,7 +96,7 @@ Tokeny 支持将飞书、微信等消息入口接入桌面 AI 助手，让 Agent
 
 ## 快速开始
 
-1. 从 [Releases](../../releases) 下载对应平台安装包。
+1. 从 [Releases](https://github.com/tokeny-ai/tokeny/releases) 下载对应平台安装包。
 2. 启动 Tokeny，进入设置中的 AI 模型配置。
 3. 添加至少一个模型服务渠道，并选择默认对话模型。
 4. 新建工作空间或打开已有项目目录。
@@ -133,6 +126,10 @@ Windows 默认位于 `%APPDATA%/Tokeny`，macOS 默认位于 `~/Library/Applicat
 ### 这是开源仓库吗？
 
 当前仓库用于发布 Tokeny 安装包、截图和说明文档，不包含完整应用源码。
+
+### 如何报告问题或提出建议？
+
+可以在 [GitHub Issues](https://github.com/tokeny-ai/tokeny/issues) 提交问题，也可以通过 [官网](https://tokeny-ai.com) 或 [B站主页](https://space.bilibili.com/385462682) 了解最新动态。
 
 ---
 
